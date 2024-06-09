@@ -1,11 +1,9 @@
 from datetime import datetime, timedelta
-import pandas as pd
-
-import pandahouse as ph
+import os
 
 from airflow.decorators import dag, task
-
-import os
+import pandas as pd
+import pandahouse as ph
 
 
 # Подключение к исходной базе
