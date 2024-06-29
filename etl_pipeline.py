@@ -1,10 +1,13 @@
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
 import os
 
 from airflow.decorators import dag, task
 import pandas as pd
 import pandahouse as ph
 
+
+load_dotenv()
 
 # Подключение к исходной базе
 connection_get = {
